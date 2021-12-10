@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h1>IT serveries ticket</h1>
+  </div>
+        <!-- output list -->
+        <ul class="item-list">
+        </ul>
+
+  <footer>
+    <form class="new-item-form">
+      <div class="field">
+        <label>ID</label>
+        <input type="text" id="ticketId">
+      </div>
+      <div class="field">
+        <label>Subject</label>
+        <input type="text" id="subject">
+      </div>
+      <div class="field">
+        <label>Category</label>
+        <select id="category">
+          <option value="billing">Billing</option>
+          <option value="marketing">Marketing</option>
+          <option value="developing">Developing</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Assignee</label>
+        <input type="text" id="assignee">
+      </div>
+      <div class="field">
+        <label>Priority</label>
+        <select id="priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Status</label>
+        <select id="status">
+          <option value="open">Open</option>
+          <option value="solved">Solved</option>
+          <option value="close">Close</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Comment</label>
+        <input type="text" id="comment">
+        <button>Add</button>
+    </form>
+
+  </footer>
+
+
+  <script type="module" src='app.js'></script>
+</body>
+
+</html>
